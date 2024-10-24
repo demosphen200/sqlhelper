@@ -1,0 +1,10 @@
+version: '3.6'
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: "sqlhelper"
+      POSTGRES_USER: "sqlhelper"
+      POSTGRES_PASSWORD: "sqlhelper"
+    ports:
+      - "5432:5432"
